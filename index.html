@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LunaArchive | Sword Master Story Guide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        🌙 <span>LunaArchive</span>
+    </div>
+
+    <nav>
+
+        <a href="#home" id="home-btn">🏠 Home</a>
+
+        <a href="#heroes" id="heroes-btn">⚔ Heroes</a>
+
+        <a href="#weapons" id="weapons-btn">🗡 Weapons</a>
+
+        <a href="#tier" id="tier-btn">🏆 Tier List</a>
+
+        <a href="credits.html">❤️ Credits</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO / HOMEPAGE ================= -->
+
+<section id="home" class="home-section">
+
+    <div class="welcome-box">
+
+        <p id="greeting" class="small-title"></p>
+
+        <h1>
+            Hey there,<br>
+            <span>Sword Master!</span> ✨
+        </h1>
+
+        <p class="welcome-text">
+
+            Your ultimate Sword Master Story guide.
+
+            Whether you're just beginning your journey
+            or chasing Rank #1, LunaArchive is here to
+            help you become even stronger!
+
+        </p>
+
+        <div class="welcome-buttons">
+
+            <button onclick="location.href='#heroes'">
+                ⚔ Explore Heroes
+            </button>
+
+            <button
+                class="secondary-button"
+                onclick="location.href='#tier'">
+
+                🏆 View Tier List
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="artemis-home">
+
+        <img
+            src="images/artemis.png"
+            class="artemis"
+            alt="Artemis">
+
+        <div class="artemis-bubble">
+
+            <p id="artemis-text">
+
+                💜 Hi Sword Master!
+                I'm Artemis!
+
+                I'll guide you through every
+                hero, weapon, build and hidden
+                mechanic in Sword Master Story!
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <h2>🔍 What are you looking for?</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search heroes, weapons, guides..."
+    >
+
+</section>
+
+
+<!-- ================= CATEGORY CARDS ================= -->
+
+<section class="categories">
+
+    <div class="category-card">
+
+        <div class="category-icon">
+            🧭
+        </div>
+
+        <h3>Interface Guide</h3>
+
+        <p>
+            Learn every important feature
+            of Sword Master Story.
+        </p>
+
+    </div>
+
+
+    <div
+        class="category-card"
+        onclick="location.href='#heroes'">
+
+        <div class="category-icon">
+            ⚔
+        </div>
+
+        <h3>Heroes</h3>
+
+        <p>
+            Stats, roles, builds and
+            detailed hero guides.
+        </p>
+
+    </div>
+
+
+    <div
+        class="category-card"
+        onclick="location.href='#weapons'">
+
+        <div class="category-icon">
+            🗡
+        </div>
+
+        <h3>Weapons</h3>
+
+        <p>
+            Find the best weapons
+            and their best users.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">
+            🛡
+        </div>
+
+        <h3>Armors</h3>
+
+        <p>
+            Discover the best equipment
+            for your heroes.
+        </p>
+
+    </div>
+
+
+    <div
+        class="category-card"
+        onclick="location.href='#tier'">
+
+        <div class="category-icon">
+            🏆
+        </div>
+
+        <h3>Tier List</h3>
+
+        <p>
+            Our current meta rankings
+            for different content.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">
+            💡
+        </div>
+
+        <h3>Things You Should Know</h3>
+
+        <p>
+            Tips, tricks and hidden
+            mechanics.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">
+            🎁
+        </div>
+
+        <h3>Gift Codes</h3>
+
+        <p>
+            Find currently working
+            reward codes.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HEROES ================= -->
+
+<section id="heroes">
+
+    <h2>⭐ Heroes</h2>
+
+    <p class="section-description">
+        Find the best heroes for your team.
+    </p>
+
+
+    <div class="filters">
+
+        <button onclick="filterHeroes('All')">
+            🌍 All
+        </button>
+
+        <button onclick="filterHeroes('Water')">
+            💧 Water
+        </button>
+
+        <button onclick="filterHeroes('Fire')">
+            🔥 Fire
+        </button>
+
+        <button onclick="filterHeroes('Light')">
+            🌞 Light
+        </button>
+
+        <button onclick="filterHeroes('Dark')">
+            🌑 Dark
+        </button>
+
+        <button onclick="filterHeroes('Leaf')">
+            🌿 Leaf
+        </button>
+
+    </div>
+
+
+    <div id="hero-list"></div>
+
+</section>
+
+
+<!-- ================= WEAPONS ================= -->
+
+<section id="weapons">
+
+    <h2>🗡 Weapons</h2>
+
+    <p class="section-description">
+        Find every weapon and the best users.
+    </p>
+
+    <div class="coming-soon">
+
+        🛠️
+
+        <h3>Weapon Database Coming Soon</h3>
+
+        <p>
+            We're currently building this section!
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TIER LIST ================= -->
+
+<section id="tier">
+
+    <h2>🏆 Tier List</h2>
+
+    <p class="section-description">
+
+        Rankings are based on overall usefulness
+        across the game's different content.
+
+    </p>
+
+    <div id="tier-list"></div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= HERO GUIDE MODAL ================= -->
+
+<div id="guideModal" class="modal">
+
+    <div class="modal-content">
+
+        <span
+            class="close"
+            onclick="closeGuide()">
+
+            &times;
+
+        </span>
+
+
+        <h2 id="modal-name">
+            🌸 Artemis
+        </h2>
+
+
+        <img
+            id="modal-image"
+            class="modal-image">
+
+
+        <p id="modal-rating"></p>
+
+        <p id="modal-element"></p>
+
+        <p id="modal-role"></p>
+
+
+        <hr>
+
+
+        <h3>
+            Best Usage
+        </h3>
+
+
+        <ul id="modal-best"></ul>
+
+
+        <hr>
+
+
+        <h3>
+            💜 Artemis says...
+        </h3>
+
+
+        <p id="modal-tip"></p>
+
+    </div>
+
+</div>
+
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

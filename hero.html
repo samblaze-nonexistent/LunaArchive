@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hero Guide</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🌙 LunaArchive
+</div>
+
+</header>
+
+
+<!-- ================= HERO PROFILE ================= -->
+
+<section class="hero-page">
+
+    <div class="hero-profile">
+
+        <!-- HERO PORTRAIT -->
+
+        <div class="hero-portrait">
+
+            <div class="hero-glow"></div>
+
+            <img id="hero-image" src="" alt="Hero">
+
+        </div>
+
+
+        <!-- HERO INFORMATION -->
+
+        <div class="hero-info">
+
+            <div class="hero-name-row">
+
+                <h1 id="hero-name">Loading...</h1>
+
+                <span id="hero-tier" class="hero-tier">
+                    ?
+                </span>
+
+            </div>
+
+            <p id="hero-rating" class="hero-rating"></p>
+
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+
+                    <span class="stat-icon">⚡</span>
+
+                    <div>
+                        <small>Element</small>
+                        <strong id="hero-element">-</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <span class="stat-icon">⚔️</span>
+
+                    <div>
+                        <small>Role</small>
+                        <strong id="hero-role">-</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <span class="stat-icon">🏰</span>
+
+                    <div>
+                        <small>Faction</small>
+                        <strong id="hero-faction">-</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <span class="stat-icon">💥</span>
+
+                    <div>
+                        <small>Class</small>
+                        <strong id="hero-class">-</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TABS ================= -->
+
+    <div class="hero-tabs">
+
+        <button id="guide-btn" class="hero-tab active">
+            📖 Guide
+        </button>
+
+        <button id="skills-btn" class="hero-tab">
+            ⚔ Skills
+        </button>
+
+        <button id="teams-btn" class="hero-tab">
+            👥 Teams
+        </button>
+
+        <button id="equipment-btn" class="hero-tab">
+            🗡 Equipment
+        </button>
+
+    </div>
+
+
+    <!-- ================= TAB CONTENT ================= -->
+
+    <div id="tab-content">
+
+        <div class="loading-hero">
+
+            ✨ Loading Hero Data...
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/data.js"></script>
+<script src="js/hero.js"></script>
+
+</body>
+
+</html>
